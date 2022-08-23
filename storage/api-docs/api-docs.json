@@ -1,0 +1,59 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "L5 OpenApi",
+        "description": "L5 Swagger OpenApi description",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/v1/NotebookController": {
+            "get": {
+                "description": "returns all notebooks with pagination 10 ordered by latest",
+                "operationId": "ae90609114e632d4f9cf220b9487752b",
+                "responses": {
+                    "200": {
+                        "description": "collection of Notebooks"
+                    }
+                }
+            },
+            "post": {
+                "description": "adds to database a new Notebook",
+                "operationId": "bd10de69275ab3b8a068577b70c25808",
+                "responses": {
+                    "200": {
+                        "description": "returns added Notebook"
+                    }
+                }
+            }
+        },
+        "/api/v1/NotebookController/{id}": {
+            "get": {
+                "description": "gets the Notebook by id",
+                "operationId": "59b7b878380b24552d1c1017bef0b210",
+                "responses": {
+                    "200": {
+                        "description": "returns a Notebook by id"
+                    }
+                }
+            },
+            "post": {
+                "description": "updates a Notebook by id",
+                "operationId": "0d03d555011fec72590bff2ec7c3ddc2",
+                "responses": {
+                    "200": {
+                        "description": "returns updated Notebook by id"
+                    }
+                }
+            },
+            "delete": {
+                "description": "deletes a Notebook by id",
+                "operationId": "ac687d4ce9810300ef30a45f16c42160",
+                "responses": {
+                    "200": {
+                        "description": "returns no content"
+                    }
+                }
+            }
+        }
+    }
+}
